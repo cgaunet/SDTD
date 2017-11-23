@@ -16,6 +16,11 @@ import java.util.*;
  */
 public class Crawler {
    
+	
+	private Map<String, String> mapMots;
+	
+	
+	
     public static HashMap<String,HashMap<String,Integer>> mapRelationsString()  throws IOException{
     	ArrayList<String> resultRecipes = new ArrayList<>();
     	HashMap<String,HashMap<String,Integer>> mapRelations = new HashMap<>();
@@ -62,6 +67,10 @@ public class Crawler {
      * @return  A random Recipe.
      * @throws IOException
      */
+    
+    
+    
+    
     public static ArrayList<String> getRandomRecipe() throws IOException{
 
         Document document = Jsoup.connect("http://www.marmiton.org/recettes/recette-hasard.aspx").get();
