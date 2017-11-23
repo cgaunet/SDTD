@@ -15,13 +15,21 @@ import java.util.*;
  * The class source.Recipe describe a recipe.
  */
 public class Crawler {
+	private HashMap<String,Integer> mapCount;
+	
+	public ArrayList<Relation> weightRelation(ArrayList<Relation> listRelations){
+		for (Relation rel : listRelations){
+			rel.setCoef((float)rel.getCount()/(float)this.mapCount.get(rel.getIngredient1()));
+		}
+		return  listRelations;
+	}
    
     public static HashMap<String,HashMap<String,Integer>> mapRelationsString()  throws IOException{
     	ArrayList<String> resultRecipes = new ArrayList<>();
     	HashMap<String,HashMap<String,Integer>> mapRelations = new HashMap<>();
     	String name1="";
     	String name2="";
-    	for (int k=0; k<10;k++){
+    	for (int k=0; k<5;k++){
     		resultRecipes = getRandomRecipe();
     		for (int i=0;i<resultRecipes.size();i++){
             	for (int j=0;j<resultRecipes.size();j++){
@@ -45,12 +53,15 @@ public class Crawler {
     	return mapRelations;
     }
     
-    public static ArrayList<Relation> getRelations() throws IOException{
+    public ArrayList<Relation> getRelations() throws IOException{
+    	this.mapCount = new HashMap<>();
     	ArrayList<Relation> listRelations = new ArrayList<>();
     	HashMap<String,HashMap<String,Integer>> mapRelations = mapRelationsString();
     	for (String key : mapRelations.keySet()){
+    		mapCount.put(key, 0);
     		HashMap<String,Integer> mapValues = mapRelations.get(key);
     		for(String key2 : mapValues.keySet()){
+    			mapCount.put(key, mapCount.get(key) + 1);
     			Relation rel = new Relation(key, key2,mapValues.get(key2));
     			listRelations.add(rel);
     		}
