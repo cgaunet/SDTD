@@ -1,10 +1,10 @@
 package example;
 
-import source.Recipe;
-
+import source.Crawler;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -15,12 +15,7 @@ public class SimpleRecipeSearchExample {
     public static void main(String[] args) {
     	try{
     		PrintWriter writer = new PrintWriter("testMarmiton", "UTF-8");
-    		for (ArrayList<String> listIngredients : Recipe.listRecipes()){
-    			for (String nameIngredient : listIngredients){
-    				writer.print(nameIngredient + ",");
-    			}
-    			writer.println();
-    		}
+    		Crawler.getRelations();
     		writer.close();
     	}catch(IOException e){
     		
