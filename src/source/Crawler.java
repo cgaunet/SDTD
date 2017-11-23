@@ -70,8 +70,8 @@ public class Crawler {
         Elements ingredients = document.getElementsByClass("ingredient");
         for (Element ingredient : ingredients){
 //        	String nomComplet = ingredient.toString();
-
-        	listIngredients.add(ingredient.text());
+        	String lastWord = ingredient.text().substring(ingredient.text().lastIndexOf(" ")+1).replace("d'", "");
+        	listIngredients.add(lastWord);
         }
         return listIngredients;
 
