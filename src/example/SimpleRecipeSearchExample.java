@@ -17,7 +17,8 @@ public class SimpleRecipeSearchExample {
     public static void main(String[] args) {
     	try{
     		PrintWriter writer = new PrintWriter("testMarmiton", "UTF-8");
-    		for(Relation rel : Crawler.getRelations()){
+    		Crawler crawl = new Crawler();
+    		for(Relation rel : crawl.weightRelation(crawl.getRelations())){
     			writer.println(rel.toString());
     		}
     		writer.close();

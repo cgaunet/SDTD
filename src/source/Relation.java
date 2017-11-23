@@ -37,13 +37,17 @@ public class Relation {
 		this.coef = coef;
 	}
 	
+	protected int getCount() {
+		return count;
+	}
+
 	protected void incCount(){
 		this.count++;
 	}
 
 	@Override
 	public String toString() {
-		return this.ingredient1 + " " + this.ingredient2 + " " + this.count;
+		return this.ingredient1 + " " + this.ingredient2 + " " + this.coef;
 	}
 	
 	
