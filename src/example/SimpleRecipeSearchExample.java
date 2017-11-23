@@ -1,6 +1,8 @@
 package example;
 
 import source.Crawler;
+import source.Relation;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -15,7 +17,9 @@ public class SimpleRecipeSearchExample {
     public static void main(String[] args) {
     	try{
     		PrintWriter writer = new PrintWriter("testMarmiton", "UTF-8");
-    		Crawler.getRelations();
+    		for(Relation rel : Crawler.getRelations()){
+    			writer.println(rel.toString());
+    		}
     		writer.close();
     	}catch(IOException e){
     		

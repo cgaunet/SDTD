@@ -21,7 +21,7 @@ public class Crawler {
     	HashMap<String,HashMap<String,Integer>> mapRelations = new HashMap<>();
     	String name1="";
     	String name2="";
-    	for (int k=0; k<20;k++){
+    	for (int k=0; k<10;k++){
     		resultRecipes = getRandomRecipe();
     		for (int i=0;i<resultRecipes.size();i++){
             	for (int j=0;j<resultRecipes.size();j++){
