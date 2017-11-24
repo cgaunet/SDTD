@@ -29,13 +29,13 @@ public class Crawler {
     	HashMap<String,HashMap<String,Integer>> mapRelations = new HashMap<>();
     	String name1="";
     	String name2="";
-    	for (int k=0; k<5;k++){
+    	for (int k=0; k<100;k++){
     		resultRecipes = getRandomRecipe();
     		for (int i=0;i<resultRecipes.size();i++){
             	for (int j=0;j<resultRecipes.size();j++){
             		if (i!=j){
-            			name1 = resultRecipes.get(i);
-            			name2 = resultRecipes.get(j);
+            			name1 = resultRecipes.get(i).substring(0, 1).toUpperCase() + resultRecipes.get(i).substring(1);
+            			name2 = resultRecipes.get(j).substring(0, 1).toUpperCase() + resultRecipes.get(j).substring(1);
             			if (mapRelations.containsKey(name1)){
             				if (mapRelations.get(name1).containsKey(name2)){
             					mapRelations.get(name1).put(name2, mapRelations.get(name1).get(name2) +1);
@@ -52,6 +52,23 @@ public class Crawler {
     	}    	
     	return mapRelations;
     }
+    
+    HashMap<String,String> temp = new HashMap<>();
+    public Crawler(){
+    	temp.put("Verte","Olive Verte");
+    	temp.put("Noire","Olive Noire");
+    	temp.put("Demi-sel","Beurre Demi-Sel");
+    	temp.put("Demi-Sel","Beurre Demi-Sel");
+    	temp.put("Demi sel","Beurre Demi-Sel");
+    	temp.put("Demi Sel","Beurre Demi-Sel");
+    	temp.put("Filo","Pâte Filo");
+    	temp.put("Bicarbonate","Bicarbonate de soude");
+    	temp.put("Soude","Bicarbonate de soude");
+    	temp.put("Verte","Olive Verte");
+    	temp.put("Verte","Olive Verte");
+    	temp.put("Verte","Olive Verte");
+    }
+    
     
     public ArrayList<Relation> getRelations() throws IOException{
     	this.mapCount = new HashMap<>();

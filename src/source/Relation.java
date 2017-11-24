@@ -44,10 +44,10 @@ public class Relation {
 	protected void incCount(){
 		this.count++;
 	}
-
+	//{"name":"mkyong","age":33,"position":"Developer","salary":7500,"skills":["java","python"]}
 	@Override
 	public String toString() {
-		return this.ingredient1 + " " + this.ingredient2 + " " + this.coef;
+		return ("{\"ingredient1\":\"" + this.ingredient1 + "\",\"ingredient2\":\"" + this.ingredient2 + "\",\"coef\":" + this.coef+ "}");
 	}
 	
 	
