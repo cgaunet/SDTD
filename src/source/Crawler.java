@@ -15,7 +15,8 @@ import java.util.*;
  * The class source.Recipe describe a recipe.
  */
 public class Crawler {
-	private HashMap<String,Integer> mapCount;
+	private HashMap<String,String> mapCount;
+	
 	
 	public ArrayList<Relation> weightRelation(ArrayList<Relation> listRelations){
 		for (Relation rel : listRelations){
@@ -26,6 +27,24 @@ public class Crawler {
    
 	
 	private Map<String, String> mapMots;
+	
+	
+	
+	
+	
+	public Crawler(){
+		this.mapCount = new HashMap<String,String>();
+		mapCount.put("terre", "pomme de terre");
+		mapCount.put("olive", "huile d'olive");
+		mapCount.put("râpé", "fromage râpé");
+		mapCount.put("coco", "noix de coco");
+		mapCount.put("blanc", "fromage blanc");
+		mapCount.put("fumés", "lardons fumés");
+		mapCount.put("muscade", "noix de muscade");
+		mapCount.put("frais", "fromage frais");
+		mapCount.put("feuilletée", "pâte feuilletée");
+		mapCount.put("épaisse", "crème épaisse");
+	}
 	
 	
 	
@@ -82,7 +101,7 @@ public class Crawler {
     
     
     
-    public static ArrayList<String> getRandomRecipe() throws IOException{
+    public ArrayList<String> getRandomRecipe() throws IOException{
 
         Document document = Jsoup.connect("http://www.marmiton.org/recettes/recette-hasard.aspx").get();
 //        String url = document.baseUri();
@@ -91,6 +110,7 @@ public class Crawler {
         for (Element ingredient : ingredients){
 //        	String nomComplet = ingredient.toString();
         	String lastWord = ingredient.text().substring(ingredient.text().lastIndexOf(" ")+1).replace("d'", "");
+        	if()
         	listIngredients.add(lastWord);
         }
         return listIngredients;
