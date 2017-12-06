@@ -8,7 +8,6 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-
 /**
  * A simple example of how to use the source.Recipe class to search a recipe.
  */
