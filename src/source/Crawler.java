@@ -38,28 +38,35 @@ public class Crawler {
 	//initialise le mapcount et le mapMots pour les cas particuliers
 	public Crawler(){
 		this.mapCount = new HashMap<String,Integer>();
-		mapMots.put("terre", "pomme de terre");
-		mapMots.put("olive", "huile d'olive");
-		mapMots.put("râpé", "fromage râpé");
-		mapMots.put("coco", "noix de coco");
-		mapMots.put("blanc", "fromage blanc");
-		mapMots.put("fumés", "lardons fumés");
-		mapMots.put("muscade", "noix de muscade");
+		mapMots.put("Terre", "pomme de terre");
+		mapMots.put("Olive", "huile d'olive");
+		mapMots.put("Râpé", "fromage râpé");
+		mapMots.put("Coco", "noix de coco");
+		mapMots.put("Blanc", "fromage blanc");
+		mapMots.put("Fumés", "lardons fumés");
+		mapMots.put("Muscade", "noix de muscade");
 		mapMots.put("frais", "fromage frais");
 		mapMots.put("feuilletée", "pâte feuilletée");
 		mapMots.put("épaisse", "crème épaisse");
 		mapMots.put("Verte","Olive Verte");
 		mapMots.put("Noire","Olive Noire");
-	    	mapMots.put("Demi-sel","Beurre Demi-Sel");
-	    	mapMots.put("Demi-Sel","Beurre Demi-Sel");
-	    	mapMots.put("Demi sel","Beurre Demi-Sel");
-	    	mapMots.put("Demi Sel","Beurre Demi-Sel");
-	    	mapMots.put("Filo","Pâte Filo");
-	    	mapMots.put("Bicarbonate","Bicarbonate de soude");
-	    	mapMots.put("Soude","Bicarbonate de soude");
-	    	mapMots.put("Verte","Olive Verte");
-	    	mapMots.put("Verte","Olive Verte");
-	    	mapMots.put("Verte","Olive Verte");
+    	mapMots.put("Demi-sel","Beurre Demi-Sel");
+    	mapMots.put("Demi-Sel","Beurre Demi-Sel");
+    	mapMots.put("Demi sel","Beurre Demi-Sel");
+    	mapMots.put("Demi Sel","Beurre Demi-Sel");
+    	mapMots.put("Filo","Pâte Filo");
+    	mapMots.put("Bicarbonate","Bicarbonate de soude");
+    	mapMots.put("Soude","Bicarbonate de soude");
+    	mapMots.put("Verte","Olive Verte");
+    	mapMots.put("Secs","Raisins secs");
+    	mapMots.put("Paimpol","Coco de paimpol");
+    	mapMots.put("Brisée","Pâte brisée");
+    	mapMots.put("Blanc","Fromage blanc");
+    	mapMots.put("Vanillé","Sucre vanillé");
+    	mapMots.put("Chèvre","Fromage de chèvre");
+    	mapMots.put("Espelette","Piment d'espelette");
+    	mapMots.put("Brisée","Pâte brisée");
+
 	}
 	
 	
@@ -69,6 +76,7 @@ public class Crawler {
     	HashMap<String,HashMap<String,Integer>> mapRelations = new HashMap<>();
     	String name1="";
     	String name2="";
+
     	for (int k=0; k<10;k++){
     		resultRecipes = getRandomRecipe();
     		for (int i=0;i<resultRecipes.size();i++){
@@ -92,8 +100,6 @@ public class Crawler {
     	}    	
     	return mapRelations;
     }
-    
-
     
     /**
      * Method which return a array list of relation ingredient 1 - ingredient2 - coeff

@@ -3,15 +3,11 @@ package example;
 import source.Crawler;
 import source.Relation;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-
-//import com.fasterxml.jackson.databind.ObjectMapper;
-
 /**
  * A simple example of how to use the source.Recipe class to search a recipe.
  */
@@ -25,10 +21,10 @@ public class SimpleRecipeSearchExample {
     		for(Relation rel : listRel){
     			writer.println(rel.toString());
     		}
+    		writer.flush();
     		writer.close();
     	}catch(IOException e){
     		
     	}
-
     }
 }
