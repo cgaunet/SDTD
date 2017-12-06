@@ -50,16 +50,16 @@ public class Crawler {
 		mapMots.put("épaisse", "crème épaisse");
 		mapMots.put("Verte","Olive Verte");
 		mapMots.put("Noire","Olive Noire");
-    	mapMots.put("Demi-sel","Beurre Demi-Sel");
-    	mapMots.put("Demi-Sel","Beurre Demi-Sel");
-    	mapMots.put("Demi sel","Beurre Demi-Sel");
-    	mapMots.put("Demi Sel","Beurre Demi-Sel");
-    	mapMots.put("Filo","Pâte Filo");
-    	mapMots.put("Bicarbonate","Bicarbonate de soude");
-    	mapMots.put("Soude","Bicarbonate de soude");
-    	mapMots.put("Verte","Olive Verte");
-    	mapMots.put("Verte","Olive Verte");
-    	mapMots.put("Verte","Olive Verte");
+	    	mapMots.put("Demi-sel","Beurre Demi-Sel");
+	    	mapMots.put("Demi-Sel","Beurre Demi-Sel");
+	    	mapMots.put("Demi sel","Beurre Demi-Sel");
+	    	mapMots.put("Demi Sel","Beurre Demi-Sel");
+	    	mapMots.put("Filo","Pâte Filo");
+	    	mapMots.put("Bicarbonate","Bicarbonate de soude");
+	    	mapMots.put("Soude","Bicarbonate de soude");
+	    	mapMots.put("Verte","Olive Verte");
+	    	mapMots.put("Verte","Olive Verte");
+	    	mapMots.put("Verte","Olive Verte");
 	}
 	
 	
