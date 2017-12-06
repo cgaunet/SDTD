@@ -29,7 +29,7 @@ public class Crawler {
     	HashMap<String,HashMap<String,Integer>> mapRelations = new HashMap<>();
     	String name1="";
     	String name2="";
-    	for (int k=0; k<100;k++){
+    	for (int k=0; k<400;k++){
     		resultRecipes = getRandomRecipe();
     		for (int i=0;i<resultRecipes.size();i++){
             	for (int j=0;j<resultRecipes.size();j++){
@@ -64,9 +64,18 @@ public class Crawler {
     	temp.put("Filo","Pâte Filo");
     	temp.put("Bicarbonate","Bicarbonate de soude");
     	temp.put("Soude","Bicarbonate de soude");
-    	temp.put("Verte","Olive Verte");
-    	temp.put("Verte","Olive Verte");
-    	temp.put("Verte","Olive Verte");
+    	temp.put("Secs","Raisins secs");
+    	temp.put("Paimpol","Coco de paimpol");
+    	temp.put("Brisée","Pâte brisée");
+    	temp.put("Blanc","Fromage blanc");
+    	temp.put("Vanillé","Sucre vanillé");
+    	temp.put("Chèvre","Fromage de chèvre");
+    	temp.put("Espelette","Piment d'espelette");
+    	temp.put("Brisée","Pâte brisée");
+    	temp.put("Brisée","Pâte brisée");
+    	temp.put("Brisée","Pâte brisée");
+    	temp.put("Brisée","Pâte brisée");
+    	temp.put("Brisée","Pâte brisée");
     }
     
     
