@@ -26,6 +26,7 @@ public class SimpleRecipeSearchExample {
         		for (int i=0; i<listIngs.size()-1;i++){
         			writer.print("ingredient" + i + "\":\"" + listIngs.get(i) +"\",\"");
         		}    
+        		writer.print("ingredient" + (listIngs.size()-1) + "\":\"" + listIngs.get(listIngs.size()-1));
         		writer.println("}");
     		}
 
