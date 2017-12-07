@@ -71,7 +71,7 @@ public class Crawler {
 	
 	
 	
-    public static HashMap<String,HashMap<String,Integer>> mapRelationsString()  throws IOException{
+    public HashMap<String,HashMap<String,Integer>> mapRelationsString()  throws IOException{
     	ArrayList<String> resultRecipes = new ArrayList<>();
     	HashMap<String,HashMap<String,Integer>> mapRelations = new HashMap<>();
     	String name1="";
@@ -129,7 +129,7 @@ public class Crawler {
      * @throws IOException
      */
 
-    public static ArrayList<String> getRandomRecipe() throws IOException{
+    public ArrayList<String> getRandomRecipe() throws IOException{
 
         Document document = Jsoup.connect("http://www.marmiton.org/recettes/recette-hasard.aspx").get();
 
