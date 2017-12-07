@@ -18,12 +18,18 @@ public class SimpleRecipeSearchExample {
 //    		for(Relation rel : listRel){
 //    			writer.println(rel.toString());
 //    		}
-    		ArrayList<String> listIngs = crawl.getRandomRecipe();
     		writer.print("{");
-    		for (int i=0; i<listIngs.size()-1;i++){
-    			writer.print("ingredient" + i + "\":\"" + listIngs.get(i) +"\",\"");
+    		//aller sur kafka
+    		for(int j=0; j<20;j++) {
+        		ArrayList<String> listIngs = crawl.getRandomRecipe();
+
+        		for (int i=0; i<listIngs.size()-1;i++){
+        			writer.print("ingredient" + i + "\":\"" + listIngs.get(i) +"\",\"");
+        		}    
+        		writer.println("}");
     		}
-    		writer.println("}");
+
+    		
     		writer.flush();
     		writer.close();
     	}catch(IOException e){

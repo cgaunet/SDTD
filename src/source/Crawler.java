@@ -66,6 +66,8 @@ public class Crawler {
     	mapMots.put("Chèvre","Fromage de chèvre");
     	mapMots.put("Espelette","Piment d'espelette");
     	mapMots.put("Brisée","Pâte brisée");
+    	mapMots.put("Sec", "Raisin Sec");
+    	mapMots.put("sec", "Raisins sec");
 
 	}
 	
