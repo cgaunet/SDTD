@@ -1,7 +1,21 @@
-# Marmiton Simple API
-Une petite API pour recuperer des listes de recettes sur Marmiton.
-Cela les crawl et fait le lien entre ingrédients suivant un indice de corrélation.
+### Marmiton Simple API
+Crawl des recettes
+Envois sur un serveur Kafka des listes d'ingredients
+Projet Maven
 
-## Dependencies
-* [jsoup-1.8.3](https://jsoup.org/)
-# SDTD
+### Installation
+git clone <http:...SDTD>
+
+---Kafka---
+sh scriptKafkaInstall.sh
+sh scriptKafkaExec.sh
+
+----API----
+ouvrir eclipse
+File>Import>Maven Project > Existing Files > choisir le dossier [pom.xml devrait etre reconnu]
+executer SimpleRecipeSearchExample.java
+
+### Resultats
+Sur la console du consumer Kafka, qui reçoit les flux de données, on observe l'ensemble des requêtes
+
+

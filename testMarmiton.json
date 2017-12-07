@@ -1,20 +1,20 @@
-{ingredient0":"figue","ingredient1":"vanille","ingredient2":"sucre","}
-ingredient0":"spaghetti","ingredient1":"asperge","ingredient2":"Langoustine","ingredient3":"fraîche","ingredient4":"piment","ingredient5":"rouge","ingredient6":"provolone","ingredient7":"Poivre","ingredient8":"Sel","}
-ingredient0":"farine","ingredient1":"beurre","ingredient2":"roux","ingredient3":"lait","ingredient4":"chimique","ingredient5":"Sel","ingredient6":"amande","ingredient7":"cannelle","ingredient8":"poudre","ingredient9":"gingembre","ingredient10":"muscade","}
-ingredient0":"saumon","ingredient1":"beurre","ingredient2":"farine","ingredient3":"lait","ingredient4":"aneth","ingredient5":"oignon","ingredient6":"ail","ingredient7":"râpé","ingredient8":"lasagnes","ingredient9":"Poivre","}
-ingredient0":"poulet","ingredient1":"citron","ingredient2":"vert","ingredient3":"céleri","ingredient4":"échalote","ingredient5":"tomate","ingredient6":"huile","ingredient7":"tomates","ingredient8":"ail","ingredient9":"sucre","ingredient10":"bouillon","}
-ingredient0":"pois","ingredient1":"terre","ingredient2":"poireau","}
-ingredient0":"fumé","ingredient1":"fromage frais","ingredient2":"terre","ingredient3":"oeuf","ingredient4":"fraîche","ingredient5":"lait","ingredient6":"râpé","ingredient7":"Poivre","ingredient8":"Sel","}
-ingredient0":"orange","ingredient1":"cannelle","ingredient2":"vanille","ingredient3":"roux","ingredient4":"miel","}
-ingredient0":"farine","ingredient1":"banane","ingredient2":"boulanger","ingredient3":"beurre","ingredient4":"roux","ingredient5":"raisin","ingredient6":"noisette","ingredient7":"oeuf","ingredient8":"lait","ingredient9":"confites","ingredient10":"quatre-épices","}
-ingredient0":"oeuf","ingredient1":"sucre","ingredient2":"farine","ingredient3":"poudre","ingredient4":"noir","ingredient5":"mascarpone","ingredient6":"marron","ingredient7":"noir","}
-ingredient0":"porc","ingredient1":"langue","ingredient2":"vin","ingredient3":"Raisins sec","ingredient4":"persil","ingredient5":"échalote","ingredient6":"Poivre","ingredient7":"garni","ingredient8":"oignon","ingredient9":"céleri","ingredient10":"ail","ingredient11":"carotte","ingredient12":"poireau","}
-ingredient0":"gras","ingredient1":"café","ingredient2":"quatre-épices","}
-ingredient0":"saumon","ingredient1":"poivron","ingredient2":"tomate","ingredient3":"aubergine","ingredient4":"ail","ingredient5":"parmesan","ingredient6":"olive","ingredient7":"Thym","ingredient8":"Poivre","}
-ingredient0":"cervelas","ingredient1":"céleri","}
-ingredient0":"ail","ingredient1":"fumé","ingredient2":"fraîche","ingredient3":"Parmesan","ingredient4":"pelée","ingredient5":"fromage frais","ingredient6":"Poivre","ingredient7":"Sel","}
-ingredient0":"canard","ingredient1":"oie","ingredient2":"Raisins sec","ingredient3":"eau","ingredient4":"choucroute","ingredient5":"oignon","ingredient6":"genévrier","ingredient7":"fumé","ingredient8":"cervelas","ingredient9":"saucisse","ingredient10":"poivre","}
-ingredient0":"campagne","ingredient1":"ail","ingredient2":"caviar","ingredient3":"jambon","}
-ingredient0":"mie","ingredient1":"tarama","ingredient2":"salade","}
-ingredient0":"potiron","ingredient1":"épice","ingredient2":"oeuf","ingredient3":"concentré","ingredient4":"Sel","ingredient5":"sucre","ingredient6":"farine","}
-ingredient0":"escalope","ingredient1":"Tapenade","ingredient2":"oignon","ingredient3":"ail","ingredient4":"laurier","ingredient5":"olive","ingredient6":"verte","ingredient7":"bouillon","ingredient8":"Provence","ingredient9":"Poivre","ingredient10":"Coriandre","ingredient11":"noix de muscade","ingredient12":"Curry","ingredient13":"Gingembre","ingredient14":"citron","ingredient15":"amande","}
+["terre","oignon","oeuf","lait","Sel","poivre","farine","chapelure","friture"]
+["pizza","oignon","andouillette","pomme","camembert","liquide","oeuf","Poivre"]
+["poule","garni","volaille","riz","demi-sel","emmental","Poivre","Sel","Laurier","Persil"]
+["semoule","citron","Eau","Coriandre","épices","Beurre"]
+["dinde","marrons","champignon","oignon","ail","maïzena","or","rouge","beurre","Sel","Poivre","persil"]
+["boeuf","rouge","carotte","ail","oignon","échalote","fumés","garni","armagnac","jambon","Canard","Poivre","Sel"]
+["brisée","bacon","terre","crème","Poivre","Sel","râpé"]
+["brisée","cèpe","olive","ail","fraîche","râpé"]
+["fumé","saumon","oeuf","fraîche","Aneth","Poivre","Sel","concombre"]
+["oeuf","oignon","secs","tournesol","emmental","huile","noix","Sel"]
+["pâte feuilletée","blanc","terre","oeuf","fraîche","râpé","Beurre","Sel"]
+["aubergine","tomate","rouge","olive","paprika","penne","sel","cumin","Poivre"]
+["gras","champignon","bacon","crème","lait","noix de muscade","Sel","Poivre"]
+["doux","oeuf","chimique","noisette","farine","sucré","noix"]
+["sucre","oeuf","Sel","farine","rapée","beurre","ananas","roux"]
+["couscous","mouton","chiche","oignon","tomate","terre","navet","carotte","courgette","courge","huile","cannelle","poivre","piment","Hanout","piment","beurre","Sel"]
+["pâtes","Thon","oignon","tomates","fraîche","râpé","Poivre","Sel"]
+["caille","rouge","balsamique","poule","liquide","Beurre","Poivre","Sel"]
+["saumon","gras","carotte","poireau","beurre","miel","Raisins sec","Ciboulette","Poivre","Sel"]
+["oeuf","sucre","farine","beurre","poudre","pâtissier","fraîche"]
