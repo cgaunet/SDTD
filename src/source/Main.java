@@ -18,7 +18,7 @@ public class Main {
 
 		Properties properties = new Properties();
 		
-		properties.put("bootstrap.servers", "localhost:9092"); //defines the broker location
+		properties.put("bootstrap.servers", "localhost:9093"); //defines the broker location
 		properties.put("acks", "all");
 		//properties.put("retries", 0);
 		properties.put("batch.size", 16384);
@@ -32,14 +32,15 @@ public class Main {
 		try {
 			producer = new KafkaProducer<>(properties);
 			//test de timeout
-			int nbRequetes = Integer.parseInt(args[0]); 
+			//int nbRequetes = Integer.parseInt(args[0]); 
 //		    if(args.length == 0)
 //		    {
 //				nbRequetes = Integer.parseInt(args[0]); 
 //		    	//System.out.println("Proper Usage is: java program filename");
 //		        System.exit(0);
 //		    }
-			for (int j = 0; j < nbRequetes ; j++) {
+			int j = 1;
+			while (true){
 				ArrayList<String> listIngs = crawl.getRandomRecipe();
 				String lesIngredients = "";
 				for (Integer i = 0; i < listIngs.size() - 1; i++) {
@@ -49,6 +50,7 @@ public class Main {
 				}
 				lesIngredients += listIngs.get(listIngs.size() - 1);
 				producer.send(new ProducerRecord<Integer, String>("TOPICINGREDIENTS", j,lesIngredients));
+				j++;
 				//Thread.sleep(400);
 			}
 		} catch (Exception e) {
