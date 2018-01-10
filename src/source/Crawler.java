@@ -51,9 +51,6 @@ public class Crawler {
 		mapMots.put("verte","Olive Verte");
 		mapMots.put("noire","Olive Noire");
     	mapMots.put("demi-sel","Beurre Demi-Sel");
-    	mapMots.put("demi-Sel","Beurre Demi-Sel");
-    	mapMots.put("demi sel","Beurre Demi-Sel");
-    	mapMots.put("demi Sel","Beurre Demi-Sel");
     	mapMots.put("filo","Pâte Filo");
     	mapMots.put("bicarbonate","Bicarbonate de soude");
     	mapMots.put("soude","Bicarbonate de soude");
@@ -67,9 +64,7 @@ public class Crawler {
     	mapMots.put("espelette","Piment d'espelette");
     	mapMots.put("brisée","Pâte brisée");
     	mapMots.put("sec", "Raisins Sec");
-
 	}
-	
 	
 	
     public HashMap<String,HashMap<String,Integer>> mapRelationsString()  throws IOException{
