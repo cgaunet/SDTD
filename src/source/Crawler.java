@@ -38,23 +38,22 @@ public class Crawler {
 	//initialise le mapcount et le mapMots pour les cas particuliers
 	public Crawler(){
 		this.mapCount = new HashMap<String,Integer>();
-		mapMots.put("terre", "pomme de terre");
-		mapMots.put("olive", "huile d'olive");
-		mapMots.put("râpé", "fromage râpé");
-		mapMots.put("coco", "noix de coco");
-		mapMots.put("blanc", "fromage blanc");
-		mapMots.put("fumés", "lardons fumés");
-		mapMots.put("muscade", "noix de muscade");
-		mapMots.put("frais", "fromage frais");
-		mapMots.put("feuilletée", "pâte feuilletée");
-		mapMots.put("épaisse", "crème épaisse");
+		mapMots.put("terre", "Pomme de terre");
+		mapMots.put("olive", "Huile d'olive");
+		mapMots.put("râpé", "Fromage râpé");
+		mapMots.put("coco", "Noix de coco");
+		mapMots.put("blanc", "Fromage blanc");
+		mapMots.put("fumés", "Lardons fumés");
+		mapMots.put("muscade", "Noix de muscade");
+		mapMots.put("frais", "Fromage frais");
+		mapMots.put("feuilletée", "Pâte feuilletée");
+		mapMots.put("épaisse", "Crème épaisse");
 		mapMots.put("verte","Olive Verte");
 		mapMots.put("noire","Olive Noire");
     	mapMots.put("demi-sel","Beurre Demi-Sel");
     	mapMots.put("filo","Pâte Filo");
     	mapMots.put("bicarbonate","Bicarbonate de soude");
     	mapMots.put("soude","Bicarbonate de soude");
-    	mapMots.put("verte","Olive Verte");
     	mapMots.put("secs","Raisins secs");
     	mapMots.put("paimpol","Coco de paimpol");
     	mapMots.put("brisée","Pâte brisée");
@@ -63,7 +62,34 @@ public class Crawler {
     	mapMots.put("chèvre","Fromage de chèvre");
     	mapMots.put("espelette","Piment d'espelette");
     	mapMots.put("brisée","Pâte brisée");
-    	mapMots.put("sec", "Raisins Sec");
+    	mapMots.put("sec", "Jambon sec");
+    	mapMots.put("noir", "Poivre noir");
+    	mapMots.put("saint-jacques", "Coquilles saint-jacques");
+    	mapMots.put("soja", "Sauce soja");
+    	mapMots.put("fraîche", "Crème fraîche");
+    	mapMots.put("mie", "Pain de mie");
+    	mapMots.put("blanc", "Jambon blanc");
+    	mapMots.put("sarrasin", "Farine de sarrasin");
+    	mapMots.put("vert", "Haricot verts");
+    	mapMots.put("verts", "Haricot verts");
+    	mapMots.put("charentes", "Pinot des Charentes");
+    	mapMots.put("rose", "Arôme de rose");
+    	mapMots.put("roux", "Sucre roux");
+    	mapMots.put("glace", "Sucre glace");
+    	mapMots.put("chimique", "Levure chimique");
+    	mapMots.put("boulanger", "Levure de boulanger");
+    	mapMots.put("poudre", "Sucre en poudre");
+    	mapMots.put("liquide", "Vanille liquide");
+    	mapMots.put("pieds", "Pieds de porc");
+    	mapMots.put("paris", "Jambon de paris");
+    	mapMots.put("rouge", "Vin rouge");
+    	mapMots.put("xeres", "Vinaigre de Xérès");
+    	mapMots.put("xéres", "Vinaigre de Xérès");
+    	mapMots.put("xérès", "Vinaigre de Xérès");
+    	mapMots.put("cajou", "Noix de Cajou");
+    	mapMots.put("haché", "Steak haché");
+    	mapMots.put("hachés", "Steak haché");
+
 	}
 	
 	
