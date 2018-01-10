@@ -1,4 +1,4 @@
-package example;
+package source;
 
 import java.util.ArrayList;
 import java.util.Properties;
@@ -12,7 +12,7 @@ import source.Crawler;
 /**
  * A simple example of how to use the source.Recipe class to search a recipe.
  */
-public class SimpleRecipeSearchExample {
+public class Main {
 
 	public static void main(String[] args) {
 		//PrintWriter writer = new PrintWriter("testMarmiton.json", "UTF-8");
