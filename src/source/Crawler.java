@@ -89,6 +89,7 @@ public class Crawler {
     	mapMots.put("cajou", "noix de Cajou");
     	mapMots.put("haché", "steak haché");
     	mapMots.put("hachés", "steak haché");
+    	mapMots.put("doux", "beurre doux");
 
 	}
 	
