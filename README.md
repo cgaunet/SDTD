@@ -1,21 +1,27 @@
 ### Marmiton Simple API
-Crawl des recettes
-Envois sur un serveur Kafka des listes d'ingredients
-Projet Maven
+Crawl des recettes au hasard
+Envoit les recettes sur un serveur Kafka des listes d'ingredients
 
 ### Installation
 git clone <http:...SDTD>
 
 ---Kafka---
 sh scriptKafkaInstall.sh
+
+### Lancement Producer & Consumer Kafka
+sh StartProducerConsumerLocal.sh
+
+### Lancement séparé - si script global ne fonctionne pas :
+1er terminal : ----API----
+mvn exec:java -Dexec.mainClass="source.Main"
+
+2eme terminal : ---Kafka---
 sh scriptKafkaExec.sh
 
-----API----
-ouvrir eclipse
-File>Import>Maven Project > Existing Files > choisir le dossier [pom.xml devrait etre reconnu]
-executer SimpleRecipeSearchExample.java
+### Arret Kafka
+sh StopProducerConsumerLocal.sh
 
 ### Resultats
-Sur la console du consumer Kafka, qui reçoit les flux de données, on observe l'ensemble des requêtes
+Le consumer Kafka reçoit en continue les recettes jusqu'à l'arrêt du programme de crawling.
 
 
