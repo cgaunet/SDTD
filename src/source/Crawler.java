@@ -91,6 +91,18 @@ public class Crawler {
     	mapMots.put("hachés", "steak haché");
     	mapMots.put("doux", "beurre doux");
     	mapMots.put("palmier", "coeurs de palmier");
+    	mapMots.put("nature", "yaourt nature");
+    	mapMots.put("worcestershire", "sauce worcestershire");
+    	mapMots.put("sablée", "pâte sablée");
+    	mapMots.put("butternut", "couge butternut");
+    	mapMots.put("bruxelles", "choux de bruxelles");
+    	mapMots.put("balsamique", "vinaigre balsamique");
+    	mapMots.put("brick", "feuille de brick");
+    	mapMots.put("rit", "vache qui rit");
+    	mapMots.put("mignon", "filet mignon");
+    	mapMots.put("patissière", "crème patissière");
+    	mapMots.put("tomate", "sauce tomate");
+    	mapMots.put("fumé", "saumon fumé");
 	}
 	
 	
