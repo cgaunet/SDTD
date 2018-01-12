@@ -27,7 +27,7 @@ public class Crawler {
 		for (Relation rel : listRelations){
 			rel.setCoef((float)rel.getCount()/((float)this.mapCount.get(rel.getIngredient1())));
 		}
-		return  listRelations;
+		return listRelations;
 	}
    
 	
@@ -81,7 +81,7 @@ public class Crawler {
     	mapMots.put("poudre", "sucre en poudre");
     	mapMots.put("liquide", "vanille liquide");
     	mapMots.put("pieds", "pieds de porc");
-    	mapMots.put("paris", "jambon de paris");
+    	mapMots.put("paris", "champignons de paris");
     	mapMots.put("rouge", "vin rouge");
     	mapMots.put("xeres", "vinaigre de Xérès");
     	mapMots.put("xéres", "vinaigre de Xérès");
@@ -90,7 +90,7 @@ public class Crawler {
     	mapMots.put("haché", "steak haché");
     	mapMots.put("hachés", "steak haché");
     	mapMots.put("doux", "beurre doux");
-
+    	mapMots.put("palmier", "coeurs de palmier");
 	}
 	
 	
@@ -100,13 +100,13 @@ public class Crawler {
     	String name1="";
     	String name2="";
 
-    	for (int k=0; k<10;k++){
+    	for (int k=0; k<100;k++){
     		resultRecipes = getRandomRecipe();
     		for (int i=0;i<resultRecipes.size();i++){
             	for (int j=0;j<resultRecipes.size();j++){
             		if (i!=j){
-            			name1 = resultRecipes.get(i).toLowerCase() + resultRecipes.get(i).substring(1);
-            			name2 = resultRecipes.get(j).toLowerCase() + resultRecipes.get(j).substring(1);
+            			name1 = resultRecipes.get(i).toLowerCase();
+            			name2 = resultRecipes.get(j).toLowerCase();
             			if (mapRelations.containsKey(name1)){
             				if (mapRelations.get(name1).containsKey(name2)){
             					mapRelations.get(name1).put(name2, mapRelations.get(name1).get(name2) +1);
@@ -160,7 +160,7 @@ public class Crawler {
         Elements ingredients = document.getElementsByClass("ingredient");
         for (Element ingredient : ingredients){
 
-        	String lastWord = ingredient.text().substring(ingredient.text().lastIndexOf(" ")+1).replace("d'", "");
+        	String lastWord = ingredient.text().substring(ingredient.text().lastIndexOf(" ")+1).replace("d'", "").toLowerCase();
         	if(mapMots.containsKey(lastWord)){
         		lastWord = mapMots.get(lastWord);
         	}
