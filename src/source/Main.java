@@ -49,7 +49,8 @@ public class Main {
 					lesIngredients += ", ";				
 				}
 				lesIngredients += listIngs.get(listIngs.size() - 1);
-				producer.send(new ProducerRecord<Integer, String>("TOPICINGREDIENTS", j,lesIngredients));
+				System.out.println(lesIngredients);
+//				producer.send(new ProducerRecord<Integer, String>("TOPICINGREDIENTS", j,lesIngredients));
 				j++;
 				//Thread.sleep(400);
 			}

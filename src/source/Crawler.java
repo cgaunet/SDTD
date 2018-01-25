@@ -17,7 +17,7 @@ import java.util.*;
 public class Crawler {
 	
 	//DEUX HASHMAP : 
-	//mapMots gere les cas particuliers de derniers mots : exemple 500g d'huile d'olive , au lieu de recuperer olive je renvois huile d'olive
+	//mapMots gere les cas particuliers de derniers mots : exemple 500g d'huile d'olive , au lieu de recuperer olive je renvoie huile d'olive
 	//mapCount 
 	
 	private HashMap<String,Integer> mapCount;
